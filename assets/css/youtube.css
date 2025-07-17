@@ -1,11 +1,18 @@
 @import url("./reset.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: Roboto;
+}
+
 body {
-    background: white;
+    background: #F9F9F9;
 }
 
 header {
-    margin: 16px 24px;
+    background: white;
+    padding: 16px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center ;
@@ -55,9 +62,62 @@ header {
     min-height: 34px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #menu-perfil img {
     height: 24px;
     width: 24px;
+}
+
+#assistir-video {
+    /* padding-left: 60px; */
+}
+
+#titulo-video-principal {
+    font-weight: bolder;
+}
+
+#acoes-video {
+    margin: 2px;
+    border: 1px solid black;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#avatar-canal {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#avatar-canal-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#inscreva-se {
+    background: red;
+    color: white;
+    width: 159px;
+    height: 40px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#descricao-video {
+    white-space: pre-wrap;
+}
+
+#like, #dislike, #compartilhar, #download{
+    width: 24px;
+    height: 24px;
 }
